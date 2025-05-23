@@ -32,5 +32,5 @@ cd <repository-directory>
 ## Build and Run the Containers
 docker-compose up --build
 
-##Access the Application
+## Access the Application
 Frontend: http://localhost:4000
