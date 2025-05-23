@@ -1,59 +1,36 @@
-# DocumentFrontend
+# Angular Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+This project is a web application built with Angular and Dockerized for seamless deployment. It features a modular design with three applications:
+1. **User Management**: Handles user authentication and profile management, including login, signup, and logout.
+2. **Document Management**: Manages document-related operations.
+3. **Ingestion Module**: Processes and ingests data/documents.
 
-## Development server
+The project uses JWT (JSON Web Tokens) for secure authentication and authorization.
 
-To start a local development server, run:
+## Features
+- User Authentication (Login, Signup, Logout)
+- JWT-based Authentication
+- Modular Applications for User, Document, and Ingestion
+- Dockerized for Easy Deployment with NGINX
+- Configured for Local Development using Docker Compose
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Directory Structure
+.
+├── Dockerfile           # Multi-stage Dockerfile for building and serving the application
+├── docker-compose.yml   # Docker Compose configuration
+├── nginx.conf           # NGINX configuration for serving the Angular app
+├── package.json         # Dependencies and scripts
+├── src/                 # Angular source files
+└── dist/                # Built Angular files (auto-generated)
 
-## Code scaffolding
+## Clone the Repository
+git clone <repository-url>
+cd <repository-directory>
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Build and Run the Containers
+docker-compose up --build
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+##Access the Application
+Frontend: http://localhost:4000
