@@ -1,0 +1,74 @@
+::ng-deep .custom-snackbar {
+  background: #323232 !important;
+  color: white !important;
+  border-radius: 8px !important;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12) !important;
+  margin: 8px !important;
+  padding: 14px 16px !important;
+  min-width: 288px !important;
+  max-width: 568px !important;
+  transform: translateY(0) !important;
+  transition: all 0.3s ease-in-out !important;
+  border: none !important;
+
+  .mat-simple-snackbar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 !important;
+  }
+
+  .mat-simple-snackbar-action {
+    color: #ff4081 !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 8px !important;
+    margin-left: 8px !important;
+    cursor: pointer !important;
+    font-weight: 500 !important;
+    min-width: 64px !important;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.1) !important;
+      border-radius: 4px !important;
+    }
+  }
+
+  &.success-snackbar {
+    background: #4caf50 !important;
+    .mat-simple-snackbar-action {
+      color: #fff !important;
+    }
+  }
+
+  &.error-snackbar {
+    background: #f44336 !important;
+    .mat-simple-snackbar-action {
+      color: #fff !important;
+    }
+  }
+
+  &.warning-snackbar {
+    background: #ff9800 !important;
+    .mat-simple-snackbar-action {
+      color: #fff !important;
+    }
+  }
+}
+
+// Animation classes
+::ng-deep .snackbar-enter {
+  transform: translateY(-100%) !important;
+}
+
+::ng-deep .snackbar-enter-active {
+  transform: translateY(0) !important;
+}
+
+::ng-deep .snackbar-exit {
+  transform: translateY(0) !important;
+}
+
+::ng-deep .snackbar-exit-active {
+  transform: translateY(-100%) !important;
+} 
