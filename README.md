@@ -34,3 +34,8 @@ docker-compose up --build
 
 ## Access the Application
 Frontend: http://localhost:4000
+
+## Services
+ - User Management: Provides endpoints for user registration, login, logout, and JWT authentication.
+ - Document Management: Handles operations related to documents.
+ - Ingestion Module: Processes and ingests data/documents.
